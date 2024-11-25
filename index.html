@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSphere-Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class= "bg-gray-900  text-white scroll-smooth">
+   <!-- Navbar -->
+   <nav class="bg-gray-800 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/4319/4319100.png" alt="TechSphere Logo" class="h-12 w-12 mr-3">
+        <a href="#" class="text-2xl font-bold">TechSphere</a>
+      </div>
+  
+      <!-- Hamburger Menu -->
+      <div id="hamburger" class="sm:hidden cursor-pointer" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+  
+      <!-- Navigation Links -->
+      <div id="nav-links" class="hidden sm:flex space-x-6">
+        <a href="#features" class="hover:text-yellow-400">Features</a>
+        <a href="#testimonials" class="hover:text-yellow-400">Testimonials</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (Dropdown) -->
+    <div id="mobile-menu" class="hidden flex-col mt-4 sm:hidden space-y-2">
+      <a href="#features" class="block p-2 bg-gray-700 rounded hover:bg-gray-600">Features</a>
+      <a href="#testimonials" class="block p-2 bg-gray-700 rounded hover:bg-gray-600">Testimonials</a>
+      <a href="#about" class="block p-2 bg-gray-700 rounded hover:bg-gray-600">About</a>
+    </div>
+  </nav>
+  
+  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    }
+  </script>   
+  <!-- Hero Section -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <img src="https://www.wscubetech.com/blog/wp-content/uploads/2024/04/generative-ai.webp" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-35">
+    <div class="relative z-10 max-w-4xl">
+      <h1 class="text-5xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500">
+        Welcome to TechSphere
+      </h1>
+      <p class="text-lg sm:text-2xl mt-6">
+        Explore a universe of technology innovations tailored for your growth.
+      </p>
+      <a href="#features" class="mt-8 inline-block bg-gradient-to-r from-yellow-400 to-red-500 text-gray-900 py-3 px-8 rounded-lg font-bold text-lg shadow-lg hover:opacity-90">
+        Get Started
+      </a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+<section id="features" class=" min-h-screen py-19 px-6 bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-12">Amazing Features</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Feature 1 -->
+        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://png.pngtree.com/png-clipart/20221230/original/pngtree-lightning-icon-vector-png-image_8826433.png" alt="Fast Performance" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">Lightning Fast</h3>
+          <p class="text-sm">
+            Experience unmatched speed and reliability in every solution.
+          </p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="bg-gradient-to-r from-green-600 to-teal-500 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://cdn-icons-png.flaticon.com/512/9767/9767104.png" alt="Secure" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">Secure by Design</h3>
+          <p class="text-sm">
+            Your data is safe with us, fortified by top-tier security.
+          </p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="bg-gradient-to-r from-pink-500 to-red-500 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://cdn-icons-png.flaticon.com/512/2716/2716350.png" alt="Growth" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">Scalable Growth</h3>
+          <p class="text-sm">
+            Scale seamlessly with solutions tailored for your goals.
+          </p>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="bg-gradient-to-r from-teal-400 to-green-400 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://cdn-icons-png.flaticon.com/512/235/235804.png" alt="24/7 Support" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">24/7 Support</h3>
+          <p class="text-sm">
+            We’re always here to assist with our round-the-clock support.
+          </p>
+        </div>
+  
+        <!-- Feature 5 -->
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://cdn-icons-png.flaticon.com/512/1142/1142261.png" alt="Intuitive Interface" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">Intuitive Interface</h3>
+          <p class="text-sm">
+            User-friendly interfaces designed for effortless navigation.
+          </p>
+        </div>
+  
+        <!-- Feature 6 -->
+        <div class="bg-gradient-to-r from-yellow-400 to-red-500 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <img src="https://cdn-icons-png.freepik.com/512/8807/8807368.png" alt="Automation" class="w-24 h-24 mx-auto mb-6 ">
+          <h3 class="text-xl font-bold mb-4">Automation</h3>
+          <p class="text-sm">
+            Automate your workflows for greater efficiency and reduced errors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-12">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:shadow-2xl transition transform hover:scale-105">
+          <img src="https://buffer.com/library/content/images/2020/05/Ash-Read.png" alt="Client 1" class="w-14 h-14 rounded-full mx-auto mb-4">
+          <blockquote class="italic text-sm">"TechSphere delivered beyond expectations. Truly transformative! Their innovative solutions have become a cornerstone of our success, enabling us to achieve goals faster and more efficiently."</blockquote>
+          <h4 class="mt-4 font-bold">- Alex Johnson</h4>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png" alt="Client 2" class="h-14 w-14 rounded-full mx-auto mb-4">
+            <blockquote class="italic text-sm">"Our productivity soared after adopting their solutions! The intuitive design and seamless integration have made daily operations smoother and more efficient than ever."</blockquote>
+            <h4 class="mt-4 font-bold">- Jamie Lee</h4>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNS0zODUucG5n.png" alt="Client 3" class="w-14 h-14 rounded-full mx-auto mb-4">
+            <blockquote class="italic text-sm">
+              "The team's expertise and dedication stood out from day one. Our business processes are now streamlined and incredibly efficient, thanks to TechSphere!"
+            </blockquote>
+            <h4 class="mt-4 font-bold">- Sarah Mitchell</h4>
+        </div>
+        
+        <!-- Testimonial 4 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:shadow-2xl transition transform hover:scale-105">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0NDUtZWxlbWVudC0wMS5wbmc.png" alt="Client 4" class="w-14 h-14 rounded-full mx-auto mb-4">
+            <blockquote class="italic text-sm">
+              "TechSphere is a game-changer. Their solutions helped us scale seamlessly while maintaining top-notch security and performance!"
+            </blockquote>
+            <h4 class="mt-4 font-bold">- Michael Carter</h4>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="min-h-screen flex flex-col justify-center items-center bg-slate-900 text-white px-6">
+    <div class="max-w-6xl text-center">
+      <h2 class="text-4xl font-extrabold mb-8">About TechSphere</h2>
+      <p class="text-lg sm:text-xl leading-relaxed mb-12">
+        At TechSphere, we specialize in crafting innovative, secure, and scalable tech solutions 
+        tailored to the unique needs of businesses worldwide. With a vision to simplify technology 
+        and drive growth, we bring together creativity, expertise, and the latest advancements in 
+        the tech industry. 
+      </p>
+      <p class="text-lg sm:text-xl leading-relaxed mb-12">
+        Our mission is to empower businesses to reach their goals through cutting-edge solutions 
+        that enhance efficiency, productivity, and innovation. From startups taking their first steps 
+        to enterprises striving for scalability, we deliver tailored strategies that make technology 
+        a seamless part of their journey.
+      </p>
+      <p class="text-lg sm:text-xl leading-relaxed mb-12">
+        At TechSphere, we believe in staying ahead of the curve. By leveraging trends such as 
+        AI, cloud computing, and data-driven insights, we continuously evolve to meet the 
+        dynamic demands of the tech landscape. Join us as we explore endless possibilities 
+        and turn challenges into opportunities for success.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+<footer class="bg-gray-800 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Upper Footer Section -->
+      <div class="flex flex-wrap justify-between items-center border-b border-gray-700 pb-8 mb-8">
+        <!-- Logo and Tagline -->
+        <div class="flex items-center space-x-3 mb-6 sm:mb-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/4319/4319100.png" alt="TechSphere Logo" class="h-12 w-12">
+          <span class="text-2xl font-bold text-white">TechSphere</span>
+        </div>
+        <!-- Call to Action -->
+        <div class="text-center sm:text-right">
+          <p class="text-gray-400 text-sm mb-4">Ready to revolutionize your tech experience?</p>
+          <a href="#contact" class="bg-gradient-to-r from-yellow-400 to-red-500 text-gray-900 px-6 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition">
+            Contact Us
+          </a>
+        </div>
+      </div>
+  
+      <!-- Links Section -->
+      <div class="flex flex-wrap justify-between text-sm text-gray-400">
+        <!-- Column 1: Quick Links -->
+        <div class="w-full sm:w-auto mb-6 sm:mb-0">
+          <h3 class="font-semibold text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#features" class="hover:text-yellow-400 transition">Features</a></li>
+            <li><a href="#about" class="hover:text-yellow-400 transition">About Us</a></li>
+            <li><a href="#testimonials" class="hover:text-yellow-400 transition">Testimonials</a></li>
+          </ul>
+        </div>
+        <!-- Column 2: Resources -->
+        <div class="w-full sm:w-auto mb-6 sm:mb-0">
+          <h3 class="font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-yellow-400 transition">Blog</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition">Careers</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition">Support</a></li>
+          </ul>
+        </div>
+        <!-- Column 3: Social Media -->
+        <div class="w-full sm:w-auto">
+          <h3 class="font-semibold text-white mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-500 transition"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="text-blue-400 hover:text-blue-500 transition"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" class="text-pink-500 hover:text-pink-600 transition"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer Section -->
+    <div class="mt-8 text-center text-gray-500 text-xs">
+      &copy; 2024 TechSphere. All rights reserved. | <a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a> | <a href="#" class="hover:text-yellow-400 transition">Terms of Service</a>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
